@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+Overview
+BodyBlaster is a competitive workout app designed for fitness enthusiasts and at-home workout enthusiasts who want to stay motivated, compete with others, and create custom workout routines. Say goodbye to expensive gym memberships and hello to a fun, engaging, and cost-effective fitness experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Competitive Workout Experience
+Choose from a variety of workout tickets, each with its own coin reward.
+Compete with other users to complete workouts and earn coins.
+Track your progress and stay motivated through friendly competition.
+Custom Workouts
+Create your own custom workout descriptions and add them to the available workout tickets.
+Tailor your workout experience to your specific needs and goals.
 
-## Available Scripts
+Leaderboard
+Check your rank on the leaderboard and see how you stack up against other users.
+Strive to be at the top and maintain a consistent workout routine.
+Compete for the title of the fittest BodyBlaster user.
+Custom Completion Board
+Mark your completed workouts on your custom completion board.
+Stay organized and track your workout history.
+See at a glance which workouts you've completed.
+Getting Started
+To get started with BodyBlaster, follow these simple steps:
 
-In the project directory, you can run:
+Sign Up: Create an account with your email address.
 
-### `npm start`
+Browse Workouts: Explore the available workout tickets and choose one to complete.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Complete Workouts: Follow the workout description and complete the exercises.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Earn Coins: Earn coins for completing workouts and track your coin balance.
 
-### `npm test`
+Usage
+Browse the available workouts and select one to complete.
+Follow the workout description and perform the exercises.
+Once you've completed a workout, mark it on your completion board.
+Check your rank on the leaderboard and aim for the top spot.
+Custom Workouts
+Creating a Custom Workout
+Navigate to the "Custom Workouts" section of the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Click on "Create Custom Workout."
 
-### `npm run build`
+Provide a name, description, and set the coin reward for your custom workout.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Save your custom workout, and it will be added to the available workout tickets.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deleting Undesired Workouts
+In the "My Workouts" section, locate the workout you want to delete.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Click on "Delete Workout" to remove it from your list.
 
-### `npm run eject`
+Deleted workouts will still be available for other users.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Leaderboard
+The leaderboard displays user rankings based on their total coins earned.
+Rankings are updated in real-time to reflect changes in user standings.
+Strive to earn more coins and climb higher on the leaderboard.
