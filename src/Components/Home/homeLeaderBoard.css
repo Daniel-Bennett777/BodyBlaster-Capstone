@@ -1,0 +1,30 @@
+.leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .leaderboard-text {
+    font-size: 2rem;
+    color: goldenrod;
+    background: linear-gradient(to bottom,rgb(122, 35, 122), rgba(0, 0, 0, 0.8), rgb(122, 35, 122));
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    z-index: 4;
+  }
+
+  .video-background {
+    /* Your video styling here */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }

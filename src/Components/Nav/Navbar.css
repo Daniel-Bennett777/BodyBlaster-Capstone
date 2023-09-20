@@ -1,0 +1,43 @@
+
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background: linear-gradient(to bottom, rgb(122, 35, 122), rgba(0, 0, 0, 0.8));
+    margin: 0; /* Set margin to 0 */
+    padding: 0;
+    width: 100%;
+    padding: 0.4rem;
+    opacity: 98%;
+    border: 2px solid goldenrod;
+    
+    
+    
+  }
+
+  .navbar-item {
+    flex-basis: 20%;
+    list-style-type: none;
+    text-align: center;
+    color: goldenrod;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(35, 34, 34);
+  }
+
+  .navbar-logout {
+    margin-left: auto;
+  }
+
+  .navbar-link:hover {
+    color: var(--primary);
+  }
+  
+.navbar-item:hover {
+  transform: scale(1.08); /* Adjust the scaling factor as desired */
+}
