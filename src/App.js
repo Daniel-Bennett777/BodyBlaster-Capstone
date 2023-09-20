@@ -1,22 +1,27 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Login } from "./Components/auth/Login";
+import { Route, Routes,} from "react-router-dom";
+import { Login } from "./Components/auth/login";
+import { Register } from "./Components/auth/register";
+import { Authorized } from "./views/Authorized";
+import { ApplicationViews } from "./views/ApplicationViews";
 
 export const App = () => {
+  
   return (
-    <Router>
-      <Routes>
-        {/* Define the login page as the root URL */}
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        {/* Define other routes here */}
-      </Routes>
-    </Router>
-  );
-};
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
-
+      <Route path="*" 
+      element={
+        <Authorized>
+          <ApplicationViews />
+        </Authorized>
+      } 
+      />
+    </Routes>
+  )
+}
 
 
 

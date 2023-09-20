@@ -1,0 +1,86 @@
+
+.workouts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right,  rgb(122, 35, 122), rgba(0, 0, 0, 0.8));
+    color: goldenrod;
+    flex-grow: 1; /* Allow the content to grow and fill available space */
+    padding: 20px;
+  
+
+    
+  }
+  
+  /* Styles for workout tickets */
+  .workout-ticket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px; /* 75% of the parent width */
+    text-align: center;
+     margin: 1 auto;
+  }
+  
+  /* Additional styles for workout titles, descriptions, and coin totals */
+  .workouts-title {
+    font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Add box shadow */
+  color: goldenrod;
+  }
+
+  .workout-title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .workout-description {
+    font-size: 16px;
+  }
+  
+  .workout-coinTotal {
+    font-size: 14px;
+  }
+  .button-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .delete-button{
+  background-color: red;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+    .complete-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: goldenrod;
+  border: 2px solid goldenrod;;
+  color: black;
+  cursor: pointer;
+}
+
+  
+  /* Hover effect */
+  .delete-button:hover {
+    background-color: darkred;
+    color: white;
+  }
+  .complete-button:hover {
+    background-color: rgb(122, 35, 122);
+    color: goldenrod;
+  }
