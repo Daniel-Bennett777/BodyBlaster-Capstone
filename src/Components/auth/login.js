@@ -25,7 +25,7 @@ export const Login = () => {
             id: user.id,
             fullName: user.fullName,
             email: user.email,
-            cointotal: user.cointotal,
+
           })
         )
         navigate("/home")
