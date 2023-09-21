@@ -4,12 +4,13 @@ import { HomeLeader } from "../Components/Home/homeLeaderBoard";
 import { NavBar } from "../Components/Nav/Navbar";
 import { WorkoutTickets } from "../Components/Workouts/workouts";
 import { CompletedWorkouts } from "../Components/Workouts/completedWorkouts";
+import { CreateWorkoutForm } from "../Components/Workouts/createdWorkouts";
 
 
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
-  const [completedWorkouts, setCompletedWorkouts] = useState([])
+  
 
   useEffect(() => {
     // Check if the current user is already stored in localStorage
@@ -50,6 +51,17 @@ export const ApplicationViews = () => {
           </>
         }
       />
+      <Route 
+      path ="/createWorkout"
+      element={
+        <>
+        <NavBar />
+        <CreateWorkoutForm currentUser ={currentUser} />
+        <Outlet />
+        </>
+      }
+      />
+
     </Routes>
   );
 };

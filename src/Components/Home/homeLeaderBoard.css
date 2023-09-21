@@ -28,3 +28,20 @@
     object-fit: cover;
     z-index: -1;
   }
+  .leaderboard-text {
+    font-size: 2rem;
+    color: goldenrod;
+  }
+  
+  .goldenrod-text {
+    color: goldenrod;
+    font-size: 2rem; /* Apply goldenrod color to user coins */
+  }
+  .leaderboard-text-container {
+    background: rgba(0, 0, 0, 0.8); /* Added opacity */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    z-index: 2; /* Adjusted z-index */
+  }
+  
