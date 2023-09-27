@@ -30,9 +30,9 @@ export const HomeLeader = () => {
       userCoinTotals[userId] += coinTotal; //Add coinTotal to the user's total coins
     }
 
-     // Create an array of promises to fetch user data for each unique user ID
-    const fetchUserPromises = Object.keys(userCoinTotals).map((userId) => { //use the Object.keys() method to extract the keys (in this case, userID) from the userCoinTotals object. 
-      return fetchUserData(userId);      //fetching the users data 
+     // this code creates an array of promises to map over each unique useres user id gotten from userCoinTotals 
+    const fetchUserPromises = Object.keys(userCoinTotals).map((userId) => { 
+      return fetchUserData(userId);      // for each userId fetch data 
     });
 
     // Wait for all user data promises to resolve
@@ -41,8 +41,10 @@ export const HomeLeader = () => {
         
         const updatedUsersWithCoinTotal = userObjects.map((user, index) => ({    // Create an array with user data and coin totals
           id: user.id,
-          fullName: user.fullName, // Access the user's fullName
-          coinTotal: userCoinTotals[Object.keys(userCoinTotals)[index]],
+          fullName: user.fullName, // Access the user's fullName for me to use in my jsx display 
+          coinTotal: userCoinTotals[Object.keys(userCoinTotals)[index]],  //object.keys(userCoinTotals) gets all keys from object and turns into array)
+
+          //ovject.keys(userCointTotals) 
         }));
         //updatedUsersWithCoinTotal is an array of objects. we 
 

@@ -4,16 +4,16 @@ import { CoinIcon } from "../coinIcon";
 import { deleteWorkout } from "../../Services/workoutsService";
 
 export const CompletedWorkouts = ({ currentUser }) => {
-  const [completedWorkouts, setCompletedWorkouts] = useState([]);
-
+  const [completedWorkouts, setCompletedWorkouts] = useState([]); //completedWorkouts is where the data of state is stored 
+//setCompletedWorkouts is my data setting function will re render my component with the new state from the fetch completeWorkout
   useEffect(() => {
-    // Fetch completed workouts, including completion dates
+    // Fetch completed workouts and all the expanded data for users and workouts 
     completeWorkout(currentUser.id).then((completeArray) => {
       setCompletedWorkouts(completeArray);
     });
   }, [currentUser]);
 
-  const handleDelete = (userCompletedWorkoutId) => {
+  const handleDelete = (userCompletedWorkoutId) => {   //userCompleted workout is my unique identifier for the one that way clicked 
     // Call the deleteWorkout function to delete the completed workout
     deleteWorkout(userCompletedWorkoutId).then(() => {
       // Reload the page after deleting the completed workout
@@ -24,9 +24,9 @@ export const CompletedWorkouts = ({ currentUser }) => {
   // Initialize an array to store filtered completed workouts
   const filteredCompletedWorkouts = [];
 
-  // Loop through completedWorkouts and filter by currentUser.id
+  // Loop through completedWorkouts  
   for (const completedWorkout of completedWorkouts) {
-    if (completedWorkout.userId === currentUser.id) {
+    if (completedWorkout.userId === currentUser.id) {   //filtering through where this is true push it to my array
       filteredCompletedWorkouts.push(completedWorkout);
     }
   }
@@ -35,8 +35,8 @@ export const CompletedWorkouts = ({ currentUser }) => {
     <div className="workouts-container">
       <h1 className="workouts-title">Completed Workouts</h1>
       <div className="workouts-list">
-        {filteredCompletedWorkouts.map((completedWorkout) => (
-          <div key={completedWorkout.id} className="workout-ticket">
+        {filteredCompletedWorkouts.map((completedWorkout) => (  //mapping over all those completed workouts for that user in the arry   key= is unique id for each jsx element 
+          <div key={completedWorkout.id}  className="workout-ticket"> 
             <div className="workout-info">
               <h2 className="workout-title">
                 {completedWorkout.workout.title}

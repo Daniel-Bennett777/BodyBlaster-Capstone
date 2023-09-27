@@ -29,3 +29,17 @@ export const deleteWorkout = (userCompletedWorkoutId) => {
   export const getAllWorkouts= () => {
     return fetch(`http://localhost:8088/workouts?_expand=type`).then((res) => res.json());
   };
+
+  export const getWorkoutById = (workoutId) => {
+    return fetch(`http://localhost:8088/workouts/${workoutId}`).then((res) => res.json());  //unused 
+  };
+
+  export const updateWorkout = (workoutId, updatedWorkoutData, currentUser) => {
+    return fetch(`http://localhost:8088/workouts/${workoutId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedWorkoutData),
+    }).then((res) => res.json());
+  };
