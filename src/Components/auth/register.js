@@ -23,7 +23,7 @@ export const Register = (props) => {
             id: user.id,
             fullName: user.fullName,
             email: user.email,
-            cointotal: user.cointotal,
+        
           })
         )
 

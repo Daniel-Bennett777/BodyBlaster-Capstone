@@ -3,14 +3,17 @@ import { createWorkout } from "../../Services/workoutsService"; // Import the cr
 import { useNavigate } from "react-router-dom";
 import "./createdWorkouts.css"
 
-export const CreateWorkoutForm = () => {
+export const CreateWorkoutForm = ({ currentUser }) => {
   const [workoutData, setWorkoutData] = useState({
     title: "",
     description: "",
     coinTotal: 0,
-    typeId: 1, // Set the default typeId here
+    typeId: 1,
+    userId: currentUser.id, // Set userId from currentUser prop
   });
+
   const navigate = useNavigate();
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setWorkoutData({
@@ -22,15 +25,25 @@ export const CreateWorkoutForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
   
+    // Ensure coinTotal does not exceed 20
+    const cappedCoinTotal = Math.min(workoutData.coinTotal, 20);
+  
+    // Update workoutData with the capped coinTotal
+    setWorkoutData({
+      ...workoutData,
+      coinTotal: cappedCoinTotal,
+    });
+  
     // Call the createWorkout function to send the data to the server
-    createWorkout(workoutData)
+    createWorkout({ ...workoutData, coinTotal: cappedCoinTotal })
       .then(() => {
-         
-         navigate("/workouts")
+        navigate("/workouts");
         // Reload the page after creating the workout
         window.location.reload();
       });
   };
+  
+  
 //htmlFor is used here which 
   return (
     <form onSubmit={handleSubmit} className="created-workouts-form">
