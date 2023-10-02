@@ -29,6 +29,7 @@ export const WorkoutTickets = ({ currentUser }) => {
 
   const handleEdit = (workoutId, title, description) => {
     // Trigger the editing state for a workout
+    //allows the user to make changes to the title and description fields and eventually save those changes
     setEditingWorkoutId(workoutId);
     setEditedTitle(title);
     setEditedDescription(description);
@@ -46,17 +47,18 @@ export const WorkoutTickets = ({ currentUser }) => {
           setWorkouts(data);
         });
         // Clear the editing state
-        setEditingWorkoutId(null);
+        setEditingWorkoutId(null);  //this line sets the editingWorkoutId state to null, indicating that no workout is currently in edit mode.it will go back to displaying workout details
         setEditedTitle("");
         setEditedDescription("");
       })
+      //these lines ensure that the component's editing state is reset, and the UI reflects the changes made during the editing process or cancels editing,
       .catch((error) => {
         // Handle error (e.g., show an error message)
       });
   };
 
-  const isEditing = (workoutId) => editingWorkoutId === workoutId;
-  const canEdit = (workoutUserId) => currentUser.id === workoutUserId;
+  const isEditing = (workoutId) => editingWorkoutId === workoutId; //checks if in editing mode
+  const canEdit = (workoutUserId) => currentUser.id === workoutUserId; //indicates user can edit because currentUser.id matches workoutUserId 
 
   return (
     <div className="workouts-container">
@@ -65,7 +67,7 @@ export const WorkoutTickets = ({ currentUser }) => {
         {workouts.map((exercise) => (
           <div key={exercise.id} className="workout-ticket">
             <div className="workout-info">
-              {isEditing(exercise.id) ? (
+              {isEditing(exercise.id) ? (  //ternary statement checking for the mode of user 
                 // Render an input field for title when in edit mode
                 <input
                   type="text"

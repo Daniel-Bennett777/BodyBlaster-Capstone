@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { completeWorkout } from "../../Services/workoutsService";
 import { CoinIcon } from "../coinIcon";
 import { deleteWorkout } from "../../Services/workoutsService";
-
+import "./workouts.css"
 export const CompletedWorkouts = ({ currentUser }) => {
   const [completedWorkouts, setCompletedWorkouts] = useState([]); //completedWorkouts is where the data of state is stored 
 //setCompletedWorkouts is my data setting function will re render my component with the new state from the fetch completeWorkout
