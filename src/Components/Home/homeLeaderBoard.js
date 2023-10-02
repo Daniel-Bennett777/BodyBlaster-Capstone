@@ -58,16 +58,17 @@ export const HomeLeader = () => {
         <source src="Video\pexels-tima-miroshnichenko-6389061 (Original).mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="leaderboard-content">
-        <h1 className="leaderboard-text">Leaderboard</h1>
-        <ul>
-          {usersWithCoinTotal.map((user) => (
-            <li key={user.id}>
-              <span className="goldenrod-text">User: {user.fullName} - Coin Total: </span>
-              <span className="goldenrod-text">{user.coinTotal}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="leaderboard-content">
+  <h1 className="leaderboard-text">Leaderboard</h1>
+  {usersWithCoinTotal.map((user) => (
+    <div key={user.id} className="user-container">
+      <span className="goldenrod-text"> {user.fullName}</span>
+      <span className="coin-container">
+        <span className="goldenrod-text">Coin Total:</span>
+        <span className="goldenrod-text">{user.coinTotal}</span>
+      </span>
+    </div>
+  ))}
       </div>
     </div>
   );

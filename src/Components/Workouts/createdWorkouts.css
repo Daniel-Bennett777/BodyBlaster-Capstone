@@ -1,3 +1,9 @@
+.created-workouts-heading {
+  color: goldenrod; /* Set the text color to goldenrod */
+  text-shadow: 2px 2px 4px black; /* Add a black shadow with offsets (adjust values as needed) */
+  text-align: center; /* Center align the text */
+}
+
 .created-workouts-container {
     display: flex;
     flex-direction: column;
@@ -29,8 +35,11 @@
     border: none;
     color: black;
     cursor: pointer;
+    transition: transform 0.2s;
   }
-  
+  .created-workouts-button:hover {
+    transform: scale(1.1); /* Scale the button to 110% on hover */
+  }
   
   .created-workouts-form input[type="text"],
   .created-workouts-form textarea,

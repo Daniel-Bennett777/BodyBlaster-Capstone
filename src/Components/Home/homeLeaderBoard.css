@@ -44,4 +44,21 @@
     border: 2px solid goldenrod;
     z-index: 2; /* Adjusted z-index */
   }
+
+  .user-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* Background color for each user */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    margin: 10px 0; /* Add margin between user entries */
+    z-index: 2;
+  }
+  
+  .coin-container {
+    display: flex;
+    align-items: center;
+  }
   
