@@ -55,7 +55,7 @@ Leaderboard
 The leaderboard displays user rankings based on their total coins earned.
 Rankings are updated in real-time to reflect changes in user standings.
 Strive to earn more coins and climb higher on the leaderboard.
-
+          ----------TEST THIS APP------------
 Instructions on actually loading in the Database to test the app: instructions are 2 part because you will need the database firstly. 
 STEP 1: go to this link and get the database setup according to readme instructions: https://github.com/Daniel-Bennett777/BodyBlaster-API
 STEP 2:
