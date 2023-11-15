@@ -55,8 +55,9 @@ Leaderboard
 The leaderboard displays user rankings based on their total coins earned.
 Rankings are updated in real-time to reflect changes in user standings.
 Strive to earn more coins and climb higher on the leaderboard.
-          ----------TEST THIS APP------------
-Instructions on actually loading in the Database to test the app: instructions are 2 part because you will need the database firstly. 
-STEP 1: go to this link and get the database setup according to readme instructions: https://github.com/Daniel-Bennett777/BodyBlaster-API
-STEP 2:
-Git clone the database SSH key in terminal: in a separate terminal or terminal tab you may now clone in the project into any directory setup for vscode. use this phrase : " git clone git@github.com:Daniel-Bennett777/BodyBlaster-Capstone.git"   
+- #TEST THIS APP
+- Instructions on actually loading in the Database to test the app: instructions are 2 part because you will need the database firstly. 
+- STEP 1: go to this link and get the database setup according to readme instructions: https://github.com/Daniel-Bennett777/BodyBlaster-API
+- STEP 2: Git clone the database SSH key in separate terminal or second open terminal tab.
+- You may now clone in the project into any directory setup for vscode. use this phrase : " git clone git@github.com:Daniel-Bennett777/BodyBlaster-Capstone.git"
+- Once the project has been cloned into the directory you can run 1) '''npm install'''
