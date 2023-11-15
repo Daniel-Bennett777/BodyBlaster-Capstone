@@ -60,4 +60,5 @@ Strive to earn more coins and climb higher on the leaderboard.
 - STEP 1: go to this link and get the database setup according to readme instructions: https://github.com/Daniel-Bennett777/BodyBlaster-API
 - STEP 2: Git clone the database SSH key in separate terminal or second open terminal tab.
 - You may now clone in the project into any directory setup for vscode. use this phrase : " git clone git@github.com:Daniel-Bennett777/BodyBlaster-Capstone.git"
-- Once the project has been cloned into the directory you can run 1) ```npm install```
+- Once the project has been cloned into the directory you can type and enter 1) ```npm install``` to setup dependencies 2) then type and enter ```npm start```.
+- Process should be served and make sure your api or json server is still serving and both tabs remain open in terminal while you run the application. Register your own user and be sure to remember the password
